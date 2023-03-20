@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dadada;
+  font-family: "Inter", sans-serif;
+  padding: 20px 0 80px 0;
+}

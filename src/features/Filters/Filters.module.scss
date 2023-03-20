@@ -1,0 +1,139 @@
+.side-bar {
+  min-width: 230px;
+  color: #1c1c1c;
+}
+
+@media all and (max-width:768px) {
+  .side-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.filter-block {
+  position: relative;
+  border-top: 2px solid #dee2e7;
+  padding-block: 14px;
+  display: flex;
+  flex-direction: column;
+  & h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 23px;
+  }
+}
+.brands {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  & input {
+    all: unset;
+    outline: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #bdbdbd;
+    border-radius: 5px;
+  }
+  & input:checked {
+    width: 20px;
+    height: 20px;
+    background-color: #0d6efd;
+    border: none;
+  }
+  & input:checked::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    z-index: 2;
+  }
+}
+.price__inputs {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+.price__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 5px;
+  margin-bottom: 8px;
+  & span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  & input {
+    max-width: 110px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #dee2e7;
+    border-radius: 6px;
+  }
+}
+.apply__btn {
+  max-width: fit-content;
+  align-self: center;
+  padding: 0 16px;
+  height: 40px;
+  background-color: #fff;
+  color: #0d6efd;
+  border: 1px solid #dee2e7;
+  box-shadow: 0px 1px 2px rgba(56, 56, 56, 0.08);
+  border-radius: 6px;
+  margin-bottom: 40px;
+  & button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+}
+.reset__btn {
+  border: none;
+  background-color: transparent;
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0d6efd;
+}
+
+.filtersHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  & button{
+    border: none;
+    background-color: transparent;
+    margin-right: 5px;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+.displayFlexColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
